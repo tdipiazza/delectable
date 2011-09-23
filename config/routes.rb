@@ -1,7 +1,12 @@
 Delectable::Application.routes.draw do
+  get "bookmarks/home"
+
   resources :bookmarks
-  
+ 
   match '/add_bookmark', :to => 'bookmarks#new'
+  match '/list_bookmarks', :to => 'bookmarks#index'
+
+  root :to => 'bookmarks#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

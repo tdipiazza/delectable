@@ -1,6 +1,14 @@
 class BookmarksController < ApplicationController
+  def home
+  end
+
   def show
     @bookmark = Bookmark.find(params[:id])
+  end
+
+  def index
+    @bookmarks = Bookmark.all
+    @title = "All bookmarks"
   end
 
   def new

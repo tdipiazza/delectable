@@ -1,1 +1,4 @@
-<%= @bookmark.name %>, <%= @bookmark.url %>, <%= @bookmark.date_saved %>
+
+<p>Bookmark Name: <%= @bookmark.name %></p>
+<p>URL: <%= @bookmark.url %></p> 
+<p><%= @bookmark.created_at.strftime("Added on %m/%d/%Y")%></p>
