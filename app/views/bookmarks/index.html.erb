@@ -1,0 +1,21 @@
+<h1>Listing bookmarks</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>URL</th>
+    <th>Date Added</th>
+  </tr>
+
+<% @bookmarks.each do |bookmark| %>
+  <tr>
+    <td><%= bookmark.name %></td>
+    <td><%= bookmark.url %></td>
+    <td><%= bookmark.created_at.strftime("%m/%d/%Y") %></td>
+  </tr>
+<% end %>
+
+</table>
+
+
+
