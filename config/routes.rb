@@ -1,5 +1,7 @@
 Delectable::Application.routes.draw do
   get "bookmarks/home"
+  get "bookmarks/new"
+  get "bookmarks/index"
 
   resources :bookmarks
  
